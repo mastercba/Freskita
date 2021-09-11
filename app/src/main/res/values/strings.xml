@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Freskita</string>
+    <string name="salir">Salir</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="home">Home</string>
+    <string name="produccion">Produccion</string>
+    <string name="ventas">Ventas</string>
+    <string name="compras">Compras</string>
 </resources>
