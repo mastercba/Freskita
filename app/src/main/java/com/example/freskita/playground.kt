@@ -439,3 +439,25 @@ fun main() {
 
 
 // Se recomienda usar la notacion Camel Case
+
+//listaCompras.php
+//<?php
+//include('functions.php');
+////$tipo = $_GET['txtTi'];
+//$array = array();
+//if($resultset=getSQLResultSet("SELECT * FROM compras")){
+//
+//    while ($row = $resultset->fetch_array(MYSQLI_NUM)){
+//
+//        $e = array();
+//        $e['id'] = $row[0];
+//        $e['date'] = $row[1];
+//        $e['detalle'] = $row[2];
+//        $e['factura'] = $row[3];
+//        $e['monto'] = $row[4];
+//
+//        array_push($array,$e);
+//    }
+//    echo json_encode($array);
+//}
+//?>
