@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Freskita">
         <activity
+            android:name=".ui.compras.ComprasActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
