@@ -8,7 +8,7 @@ class ComprasModel(
     var date: String,
     var detalle: String,
     var factura: String,
-    var monto: Double
+    var monto: String
 ){
 
 }

@@ -45,7 +45,7 @@ class ComprasActivity : AppCompatActivity() {
                 var date = jsonObject.get("date").toString().trim()
                 var detalle = jsonObject.get("detalle").toString()
                 var factura = jsonObject.get("factura").toString()
-                var monto = jsonObject.get("monto").toString().toDouble()
+                var monto = jsonObject.get("monto").toString()
                 //Toast.makeText(this,"ID: "+id+" CODE: "+code+
                 //        " Name: "+name+" Seed: "+seed, Toast.LENGTH_LONG).show()
                 arrayList.add(ComprasModel(id,date,detalle,factura,monto))

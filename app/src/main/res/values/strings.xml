@@ -10,4 +10,6 @@
     <string name="ventas">Ventas</string>
     <string name="compras">Compras</string>
     <string name="ingresar">Ingresar</string>
+    <string name="editar">Editar</string>
+    <string name="borrar">Delete</string>
 </resources>

@@ -41,7 +41,7 @@ class ComprasAdapter(val arrayList: ArrayList<ComprasModel>, val context: Contex
             var gDate: String = gmodel.date
             var gDetalle: String = gmodel.detalle
             var gFactura: String = gmodel.factura
-            var gMonto: Double = gmodel.monto
+            var gMonto: String = gmodel.monto
 
             //crear intent con kotlin
 

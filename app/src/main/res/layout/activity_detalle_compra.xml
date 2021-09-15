@@ -62,7 +62,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/montoRxET"
         app:layout_constraintEnd_toStartOf="@+id/guideline5c" />
 
-    <EditText
+    <TextView
         android:id="@+id/detalleRxET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
         app:layout_constraintStart_toStartOf="@+id/facturaRxET"
         app:layout_constraintTop_toBottomOf="@+id/fechaRxTV" />
 
-    <EditText
+    <TextView
         android:id="@+id/facturaRxET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
         app:layout_constraintStart_toStartOf="@+id/montoRxET"
         app:layout_constraintTop_toBottomOf="@+id/detalleRxET" />
 
-    <EditText
+    <TextView
         android:id="@+id/montoRxET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
