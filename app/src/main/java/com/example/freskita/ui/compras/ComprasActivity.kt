@@ -1,7 +1,11 @@
 package com.example.freskita.ui.compras
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Button
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,6 +20,8 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 class ComprasActivity : AppCompatActivity() {
+
+    lateinit var FAB_btnNewCompra: Button
 
     //creamos un ArrayList vacio de tipo ProductionModel, ():constructor
     val arrayList = ArrayList<ComprasModel>()
@@ -36,7 +42,7 @@ class ComprasActivity : AppCompatActivity() {
             for (i in 0 until jsonArray.length()){
                 val jsonObject = JSONObject(jsonArray.getString(i))
                 var id = jsonObject.get("id").toString().toInt()
-                var date = jsonObject.get("date").toString()
+                var date = jsonObject.get("date").toString().trim()
                 var detalle = jsonObject.get("detalle").toString()
                 var factura = jsonObject.get("factura").toString()
                 var monto = jsonObject.get("monto").toString().toDouble()
@@ -60,18 +66,34 @@ class ComprasActivity : AppCompatActivity() {
         queue.add(stringRequest)
         //displayList.addAll(arrayList)
 
-        /*codigo para agregar un nuevo producto*/
-//        FAB_btnNew.setOnClickListener {
-//
+//        /*codigo para agregar un nuevo producto*/
+//        FAB_btnNewCompra.setOnClickListener {
 //            //crear intent con kotlin
-//            val intent = Intent(this,SiembraActivity::class.java)
+//            //val intent = Intent(this,NuevaCompraActivity::class.java)
 //            //iniciar el activity
-//            this.startActivity(intent)
-//
+//            //this.startActivity(intent)
 //        }
-        /*-------------------------------------*/
+//        /*-------------------------------------*/
     }
 //    override fun onOptionsItemSelected(item: MenuItem): Boolean {
 //        return super.onOptionsItemSelected(item)
 //    }
+
+    //<!-----AppBar Menu, Botones:produccion,compras,ventas & salir------>
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_compras,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.ingresar -> {
+            //crear intent con kotlin
+            val intent34 = Intent(this,NuevaCompraActivity::class.java)
+            //iniciar el activity
+            this.startActivity(intent34)
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+    //------------------------------------------------------------------->
 }

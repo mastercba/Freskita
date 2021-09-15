@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/activity_compras.xml" value="0.17239583333333333" />
+        <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/activity_detalle_compra.xml" value="0.17239583333333333" />
+        <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/activity_nueva_compra.xml" value="0.2518518518518518" />
         <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/compra_item.xml" value="0.5" />
+        <entry key="..\:/WorkSpace/Freskita/app/src/main/res/menu/menu_compras.xml" value="0.2518518518518518" />
         <entry key="..\:/WorkSpace/Freskita/app/src/main/res/menu/menu_home.xml" value="0.33" />
       </map>
     </option>

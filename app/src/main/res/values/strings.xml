@@ -9,4 +9,5 @@
     <string name="produccion">Produccion</string>
     <string name="ventas">Ventas</string>
     <string name="compras">Compras</string>
+    <string name="ingresar">Ingresar</string>
 </resources>

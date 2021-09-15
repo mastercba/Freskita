@@ -9,6 +9,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.freskita.R
 import com.example.freskita.model.ComprasModel
+import com.example.freskita.ui.compras.DetalleCompraActivity
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class ComprasAdapter(val arrayList: ArrayList<ComprasModel>, val context: Context) :
@@ -30,47 +33,30 @@ class ComprasAdapter(val arrayList: ArrayList<ComprasModel>, val context: Contex
         holder.facturaCompraTV.text = model.factura
         holder.montoCompraTV.text = model.monto.toString()
 
-//        holder.itemView.setOnClickListener{
-//            //seleccionar el item de la posicion
-//            val gmodel = arrayList.get(position)
-//            //obtener el detalle de siembra seleccionada de un item con intent
-//            var gId:Int = gmodel.id
-//            var gCode: Int = gmodel.code
-//            var gName: String = gmodel.name
-//            var gSeed: String = gmodel.seed
-//            var gDays: Int = gmodel.days
-//            var gBja: Int = gmodel.bja
-//            var gSiembraDate: String = gmodel.siembraDate
-//            var gGDays: Int = gmodel.gDays
-//            var gAlmacigoDate: String = gmodel.almacigoDate
-//            var gADays: Int = gmodel.aDays
-//            var gTuboDate: String = gmodel.tuboDate
-//            var gTDays: Int = gmodel.tDays
-//            var gCosechaDate: String = gmodel.cosechaDate
-//
-//            //crear intent con kotlin
-//
-//            val intentDetalle = Intent(context, EditActivity::class.java)
-//            //poner todos los items con putExtra intent
-//            intentDetalle.putExtra("iId",gId)
-//            intentDetalle.putExtra("iCode",gCode)
-//            intentDetalle.putExtra("iName",gName)
-//            intentDetalle.putExtra("iSeed",gSeed)
-//            intentDetalle.putExtra("iDays",gDays)
-//            intentDetalle.putExtra("iBja",gBja)
-//            intentDetalle.putExtra("iSiembraDate",gSiembraDate)
-//            intentDetalle.putExtra("iGDays",gGDays)
-//            intentDetalle.putExtra("iAlmacigoDate",gAlmacigoDate)
-//            intentDetalle.putExtra("iADays",gADays)
-//            intentDetalle.putExtra("iTuboDate",gTuboDate)
-//            intentDetalle.putExtra("iTDays",gTDays)
-//            intentDetalle.putExtra("iCosechaDate",gCosechaDate)
-//
-//            //iniciar el activity detalle
-//            //startActivity(intent)
-//            context.startActivity(intentDetalle)
-//
-//        }
+        holder.itemView.setOnClickListener{
+            //seleccionar el item de la posicion
+            val gmodel = arrayList.get(position)
+            //obtener el detalle de compra seleccionada de un item con intent
+            var gId:Int = gmodel.id
+            var gDate: String = gmodel.date
+            var gDetalle: String = gmodel.detalle
+            var gFactura: String = gmodel.factura
+            var gMonto: Double = gmodel.monto
+
+            //crear intent con kotlin
+
+            val intentComprasDetalle = Intent(context, DetalleCompraActivity::class.java)
+            //poner todos los items con putExtra intent
+            intentComprasDetalle.putExtra("iId",gId)
+            intentComprasDetalle.putExtra("iDate",gDate)
+            intentComprasDetalle.putExtra("iDetalle",gDetalle)
+            intentComprasDetalle.putExtra("iFactura",gFactura)
+            intentComprasDetalle.putExtra("iMonto",gMonto)
+
+            //iniciar el activity Comprasdetalle
+            context.startActivity(intentComprasDetalle)
+
+        }
     }
 
     override fun getItemCount(): Int {
