@@ -13,7 +13,6 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.example.freskita.MainActivity
 import com.example.freskita.R
 import org.json.JSONException
 import org.json.JSONObject
@@ -30,9 +29,9 @@ class NuevaCompraActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nueva_compra)
 
-        txtDetalleCompra = findViewById(R.id.txtDetalleCompra)
-        txtFacturaCompra = findViewById(R.id.txtFacturaCompra)
-        txtMontoCompra = findViewById(R.id.txtMontoCompra)
+        txtDetalleCompra = findViewById(R.id.detalleRxET)
+        txtFacturaCompra = findViewById(R.id.facturaRxET)
+        txtMontoCompra = findViewById(R.id.montoRxET)
         btnGuardarCompra = findViewById(R.id.btnGuardarCompra)
 
         //verificamos la conexion a INTERNET

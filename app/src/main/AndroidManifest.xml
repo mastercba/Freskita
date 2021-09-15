@@ -18,7 +18,8 @@
             android:parentActivityName=".ui.compras.ComprasActivity" />
         <activity
             android:name=".ui.compras.DetalleCompraActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".ui.compras.ComprasActivity" />
         <activity
             android:name=".ui.compras.ComprasActivity"
             android:exported="true"
