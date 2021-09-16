@@ -64,6 +64,7 @@ class ComprasActivity : AppCompatActivity() {
                var monto = jsonObject.get("monto").toString()
                //Toast.makeText(this,"ID: "+id+" CODE: "+code+
                //        " Name: "+name+" Seed: "+seed, Toast.LENGTH_LONG).show()
+               //Toast.makeText(this,"Update Failed", Toast.LENGTH_SHORT).show()
                arrayList.add(ComprasModel(id,date,detalle,factura,monto))
            }
            displayList.addAll(arrayList)

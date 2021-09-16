@@ -124,6 +124,7 @@
             android:id="@+id/idCompraTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toTopOf="parent"

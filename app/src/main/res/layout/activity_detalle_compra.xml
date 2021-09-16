@@ -117,8 +117,8 @@
         android:id="@+id/idRxTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline5c"
-        app:layout_constraintTop_toBottomOf="@+id/montoLabel" />
+        app:layout_constraintBottom_toBottomOf="@+id/fechaRxTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fechaRxTV" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

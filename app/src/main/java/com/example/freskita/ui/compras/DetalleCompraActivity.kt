@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.EditText
+import androidx.appcompat.app.AlertDialog
 import android.widget.TextView
 import android.widget.Toast
 import com.android.volley.AuthFailureError
@@ -55,47 +56,60 @@ class DetalleCompraActivity : AppCompatActivity() {
     //<!---------------Delete Compra------------------------------------->
     private fun delCompra() {
 
-        val delId = txtIDCompra.text.toString()
+        val builder = AlertDialog.Builder(this)
+        builder.setMessage("Are you sure?")
+        builder.setCancelable(true)
+        builder.setPositiveButton("Yes"){ dialog,_->
 
-        val queue = Volley.newRequestQueue(this)
-        val url: String = "https://quanticasoft.com/~quantid5/freskita/eliminarCompra.php"
-        //creating volley string request
-        val stringRequest = object : StringRequest(
-            Request.Method.POST, url,
-            Response.Listener<String> { response ->
-                try {
-                    val obj = JSONObject(response)
+            val delId = txtIDCompra.text.toString()
+
+            val queue = Volley.newRequestQueue(this)
+            val url: String = "https://quanticasoft.com/~quantid5/freskita/eliminarCompra.php"
+            //creating volley string request
+            val stringRequest = object : StringRequest(
+                Request.Method.POST, url,
+                Response.Listener<String> { response ->
+                    try {
+                        val obj = JSONObject(response)
+                        Toast.makeText(
+                            applicationContext,
+                            obj.getString("message"),
+                            Toast.LENGTH_LONG
+                        ).show()
+                    } catch (e: JSONException) {
+                        e.printStackTrace()
+                    }
+                },
+                Response.ErrorListener { volleyError ->
                     Toast.makeText(
                         applicationContext,
-                        obj.getString("message"),
+                        volleyError.message,
                         Toast.LENGTH_LONG
                     ).show()
-                } catch (e: JSONException) {
-                    e.printStackTrace()
+                }) {
+                @Throws(AuthFailureError::class)
+                override fun getParams(): Map<String, String> {
+                    val params = HashMap<String, String>()
+                    //params.put("date", nFecha)
+                    params.put("id", delId)
+                    return params
                 }
-            },
-            Response.ErrorListener { volleyError ->
-                Toast.makeText(
-                    applicationContext,
-                    volleyError.message,
-                    Toast.LENGTH_LONG
-                ).show()
-            }) {
-            @Throws(AuthFailureError::class)
-            override fun getParams(): Map<String, String> {
-                val params = HashMap<String, String>()
-                //params.put("date", nFecha)
-                params.put("id", delId)
-                return params
             }
-        }
-        //adding request to queue
-        queue.add(stringRequest)
+            //adding request to queue
+            queue.add(stringRequest)
 
-        // 1. creo el Intent
-        val back2Compras = Intent(this, ComprasActivity::class.java)
-        // 2. Inicializar la actividad con el Intent creado
-        this.startActivity(back2Compras)
+            // 1. creo el Intent
+            val back2Compras = Intent(this, ComprasActivity::class.java)
+            // 2. Inicializar la actividad con el Intent creado
+            this.startActivity(back2Compras)
+
+            dialog.dismiss()
+        }
+        builder.setNegativeButton("No"){ dialog,_->
+            dialog.dismiss()
+        }
+        val alert = builder.create()
+        alert.show()
 
     }
     //------------------------------------------------------------------->
