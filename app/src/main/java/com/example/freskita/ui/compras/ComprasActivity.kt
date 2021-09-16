@@ -31,40 +31,8 @@ class ComprasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_compras)
 
-        //getSiembras()
-        /*----Codigo para extraer los datos desde mysql----*/
-        val queue = Volley.newRequestQueue(this)
-        val url="https://quanticasoft.com/~quantid5/freskita/listaCompras.php"
+        getCompras()
 
-        val stringRequest = StringRequest(Request.Method.GET,url, { response ->
-            val jsonArray = JSONArray(response)
-
-            for (i in 0 until jsonArray.length()){
-                val jsonObject = JSONObject(jsonArray.getString(i))
-                var id = jsonObject.get("id").toString().toInt()
-                var date = jsonObject.get("date").toString().trim()
-                var detalle = jsonObject.get("detalle").toString()
-                var factura = jsonObject.get("factura").toString()
-                var monto = jsonObject.get("monto").toString()
-                //Toast.makeText(this,"ID: "+id+" CODE: "+code+
-                //        " Name: "+name+" Seed: "+seed, Toast.LENGTH_LONG).show()
-                arrayList.add(ComprasModel(id,date,detalle,factura,monto))
-            }
-            displayList.addAll(arrayList)
-            //recyclerView.adapter!!.notifyDataSetChanged()
-
-            val recyclerView = findViewById<RecyclerView>(R.id.comprasRecyclerView)
-            //val pAdapter = ProductionAdapter()....working!
-            val cAdapter = ComprasAdapter(displayList,this)
-
-            recyclerView.layoutManager = LinearLayoutManager(this)
-            recyclerView.adapter = cAdapter
-
-        }, Response.ErrorListener{ error ->
-            Toast.makeText(this,"Algo salio mal ${error}", Toast.LENGTH_LONG).show()
-        })
-        queue.add(stringRequest)
-        //displayList.addAll(arrayList)
 
 //        /*codigo para agregar un nuevo producto*/
 //        FAB_btnNewCompra.setOnClickListener {
@@ -78,6 +46,45 @@ class ComprasActivity : AppCompatActivity() {
 //    override fun onOptionsItemSelected(item: MenuItem): Boolean {
 //        return super.onOptionsItemSelected(item)
 //    }
+
+   private fun getCompras(){
+       /*----Codigo para extraer los datos desde mysql----*/
+       val queue = Volley.newRequestQueue(this)
+       val url="https://quanticasoft.com/~quantid5/freskita/listaCompras.php"
+
+       val stringRequest = StringRequest(Request.Method.GET,url, { response ->
+           val jsonArray = JSONArray(response)
+
+           for (i in 0 until jsonArray.length()){
+               val jsonObject = JSONObject(jsonArray.getString(i))
+               var id = jsonObject.get("id").toString()
+               var date = jsonObject.get("date").toString().trim()
+               var detalle = jsonObject.get("detalle").toString()
+               var factura = jsonObject.get("factura").toString()
+               var monto = jsonObject.get("monto").toString()
+               //Toast.makeText(this,"ID: "+id+" CODE: "+code+
+               //        " Name: "+name+" Seed: "+seed, Toast.LENGTH_LONG).show()
+               arrayList.add(ComprasModel(id,date,detalle,factura,monto))
+           }
+           displayList.addAll(arrayList)
+           //recyclerView.adapter!!.notifyDataSetChanged()
+
+           val recyclerView = findViewById<RecyclerView>(R.id.comprasRecyclerView)
+           //val pAdapter = ProductionAdapter()....working!
+           val cAdapter = ComprasAdapter(displayList,this)
+
+           recyclerView.layoutManager = LinearLayoutManager(this)
+           recyclerView.adapter = cAdapter
+
+       }, Response.ErrorListener{ error ->
+           Toast.makeText(this,"Algo salio mal ${error}", Toast.LENGTH_LONG).show()
+       })
+       queue.add(stringRequest)
+       //displayList.addAll(arrayList)
+   }
+
+
+
 
     //<!-----AppBar Menu, Botones:produccion,compras,ventas & salir------>
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

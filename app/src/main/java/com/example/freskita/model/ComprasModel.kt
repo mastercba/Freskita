@@ -4,7 +4,7 @@ import android.provider.CalendarContract
 import java.util.*
 
 class ComprasModel(
-    var id: Int,
+    var id: String,
     var date: String,
     var detalle: String,
     var factura: String,

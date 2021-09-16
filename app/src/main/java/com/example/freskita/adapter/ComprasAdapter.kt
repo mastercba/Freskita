@@ -27,7 +27,7 @@ class ComprasAdapter(val arrayList: ArrayList<ComprasModel>, val context: Contex
     override fun onBindViewHolder(holder: ComprasViewHolder, position: Int) {
         // tengo una noticia en concreto
         val model = arrayList.get(position)
-        //holder.idTextView.text = model.id.toString()
+        holder.idCompraTV.text = model.id.toString()
         holder.fechaCompraTV.text = model.date.toString()
         holder.desCompraTV.text = model.detalle
         holder.facturaCompraTV.text = model.factura
@@ -37,7 +37,7 @@ class ComprasAdapter(val arrayList: ArrayList<ComprasModel>, val context: Contex
             //seleccionar el item de la posicion
             val gmodel = arrayList.get(position)
             //obtener el detalle de compra seleccionada de un item con intent
-            var gId:Int = gmodel.id
+            var gId:String = gmodel.id
             var gDate: String = gmodel.date
             var gDetalle: String = gmodel.detalle
             var gFactura: String = gmodel.factura
@@ -65,7 +65,7 @@ class ComprasAdapter(val arrayList: ArrayList<ComprasModel>, val context: Contex
 
     //clase enbebida esta clase es el que sostiene la vista  ViewHolder
     inner class ComprasViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
-        //var idTextView: TextView
+        var idCompraTV: TextView
         var fechaCompraTV: TextView
         var desCompraTV: TextView
         var facturaCompraTV: TextView
@@ -73,7 +73,7 @@ class ComprasAdapter(val arrayList: ArrayList<ComprasModel>, val context: Contex
 
 
         init {
-            //idTextView = itemView.findViewById(R.id.idTextView)
+            idCompraTV = itemView.findViewById(R.id.idCompraTV)
             fechaCompraTV = itemView.findViewById(R.id.fechaCompraTV)
             desCompraTV = itemView.findViewById(R.id.desCompraTV)
             facturaCompraTV = itemView.findViewById(R.id.facturaCompraTV)

@@ -120,6 +120,15 @@
             app:layout_constraintTop_toTopOf="parent"
             card_view:text="08.09.2021" />
 
+        <TextView
+            android:id="@+id/idCompraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="parent"
+            card_view:text="id" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
