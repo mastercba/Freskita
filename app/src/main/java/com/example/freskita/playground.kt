@@ -461,3 +461,14 @@ fun main() {
 //    echo json_encode($array);
 //}
 //?>
+
+
+//eliminarCompra.php
+//<?php
+//include('functions.php');
+//
+//$id=$_POST['id'];
+//
+//$query="delete from compras WHERE id = '".$id."'";
+//ejecutarSQLCommand($query)
+//?>
