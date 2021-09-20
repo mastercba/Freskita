@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.compras.DetalleCompraActivity">
+
+    <TextView
+        android:id="@+id/detalleCompraTitulo"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="DETALLE COMPRA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fechaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Fecha :"
+        app:layout_constraintBottom_toBottomOf="@+id/fechaRxTV"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5c" />
+
+    <TextView
+        android:id="@+id/detalleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Detalle :"
+        app:layout_constraintBottom_toBottomOf="@+id/detalleRxET"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5c" />
+
+    <TextView
+        android:id="@+id/facturaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Factura :"
+        app:layout_constraintBottom_toBottomOf="@+id/facturaRxET"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5c" />
+
+    <TextView
+        android:id="@+id/montoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Monto Bs. :"
+        app:layout_constraintBottom_toBottomOf="@+id/montoRxET"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5c" />
+
+    <TextView
+        android:id="@+id/detalleRxET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Detalle"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/facturaRxET"
+        app:layout_constraintTop_toBottomOf="@+id/fechaRxTV" />
+
+    <TextView
+        android:id="@+id/facturaRxET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="# Factura"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/montoRxET"
+        app:layout_constraintTop_toBottomOf="@+id/detalleRxET" />
+
+    <TextView
+        android:id="@+id/montoRxET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Bs."
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/facturaRxET" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <TextView
+        android:id="@+id/fechaRxTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/detalleRxET"
+        app:layout_constraintTop_toBottomOf="@+id/detalleCompraTitulo" />
+
+    <TextView
+        android:id="@+id/idRxTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/fechaRxTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fechaRxTV" />
+
+
+    <Button
+        android:id="@+id/btnUpdateCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="UPDATE"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/montoRxET" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

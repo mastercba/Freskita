@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.freskita">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,6 +12,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Freskita">
+        <activity
+            android:name=".ui.compras.EditCompraActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.compras.ComprasActivity" />
+        <activity
+            android:name=".ui.compras.NuevaCompraActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.compras.ComprasActivity" />
+        <activity
+            android:name=".ui.compras.DetalleCompraActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.compras.ComprasActivity" />
+        <activity
+            android:name=".ui.compras.ComprasActivity"
+            android:exported="true"
+            android:label="@string/title_activity_compras"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
