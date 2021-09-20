@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Freskita">
         <activity
+            android:name=".ui.compras.EditCompraActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.compras.ComprasActivity" />
+        <activity
             android:name=".ui.compras.NuevaCompraActivity"
             android:exported="true"
             android:parentActivityName=".ui.compras.ComprasActivity" />

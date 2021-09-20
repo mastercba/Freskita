@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.compras.DetalleCompraActivity">
+    tools:context=".ui.compras.EditCompraActivity">
 
     <TextView
-        android:id="@+id/detalleCompraTitulo"
+        android:id="@+id/updateCompraTitulo"
         android:layout_width="332dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
-        android:text="DETALLE COMPRA"
+        android:text="EDITAR COMPRA"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="18dp"
@@ -30,7 +30,7 @@
         android:layout_marginRight="8dp"
         android:text="Fecha :"
         app:layout_constraintBottom_toBottomOf="@+id/fechaRxTV"
-        app:layout_constraintEnd_toStartOf="@+id/guideline5c" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline8c" />
 
     <TextView
         android:id="@+id/detalleLabel"
@@ -40,7 +40,7 @@
         android:layout_marginRight="8dp"
         android:text="Detalle :"
         app:layout_constraintBottom_toBottomOf="@+id/detalleRxET"
-        app:layout_constraintEnd_toStartOf="@+id/guideline5c" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline8c" />
 
     <TextView
         android:id="@+id/facturaLabel"
@@ -50,7 +50,7 @@
         android:layout_marginRight="8dp"
         android:text="Factura :"
         app:layout_constraintBottom_toBottomOf="@+id/facturaRxET"
-        app:layout_constraintEnd_toStartOf="@+id/guideline5c" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline8c" />
 
     <TextView
         android:id="@+id/montoLabel"
@@ -60,29 +60,31 @@
         android:layout_marginRight="8dp"
         android:text="Monto Bs. :"
         app:layout_constraintBottom_toBottomOf="@+id/montoRxET"
-        app:layout_constraintEnd_toStartOf="@+id/guideline5c" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline8c" />
 
-    <TextView
+    <EditText
         android:id="@+id/detalleRxET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+
         android:hint="Detalle"
-        android:inputType="text"
+        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="@+id/facturaRxET"
         app:layout_constraintTop_toBottomOf="@+id/fechaRxTV" />
 
-    <TextView
+    <EditText
         android:id="@+id/facturaRxET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:ems="10"
         android:hint="# Factura"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="@+id/montoRxET"
         app:layout_constraintTop_toBottomOf="@+id/detalleRxET" />
 
-    <TextView
+    <EditText
         android:id="@+id/montoRxET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -92,11 +94,11 @@
         android:ems="10"
         android:hint="Bs."
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/guideline5c"
+        app:layout_constraintStart_toStartOf="@+id/guideline8c"
         app:layout_constraintTop_toBottomOf="@+id/facturaRxET" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5c"
+        android:id="@+id/guideline8c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -109,7 +111,7 @@
         android:layout_marginTop="24dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/detalleRxET"
-        app:layout_constraintTop_toBottomOf="@+id/detalleCompraTitulo" />
+        app:layout_constraintTop_toBottomOf="@+id/updateCompraTitulo" />
 
     <TextView
         android:id="@+id/idRxTV"
@@ -119,14 +121,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fechaRxTV" />
 
-
     <Button
-        android:id="@+id/btnUpdateCompra"
+        android:id="@+id/btnGuardarCompra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="UPDATE"
-        android:visibility="invisible"
+        android:text="GUARDAR COMPRA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
