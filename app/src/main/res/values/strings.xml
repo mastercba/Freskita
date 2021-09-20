@@ -2,6 +2,7 @@
     <string name="app_name">Freskita</string>
 
     <string name="title_activity_compras">Compras</string>
+    <string name="title_activity_siembras">Siembras</string>
 
     <string name="salir">Salir</string>
     <string name="actualizar">Actualizar</string>

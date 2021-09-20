@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import com.example.freskita.ui.compras.ComprasActivity
+import com.example.freskita.ui.produccion.ProduccionActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,10 +26,8 @@ class MainActivity : AppCompatActivity() {
         when(item.itemId){
 
             R.id.produccion -> {
-                // 1. creo el Intent
-                //val go2Siembra = Intent(this, SiembraActivity::class.java)
-                // 2. Inicializar la actividad con el Intent creado
-                //this.startActivity(go2Siembra)
+                val go2Produccion = Intent(this, ProduccionActivity::class.java)
+                this.startActivity(go2Produccion)
             }
             R.id.compras -> {
                 // 1. creo el Intent
