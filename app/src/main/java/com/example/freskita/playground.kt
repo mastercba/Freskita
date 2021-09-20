@@ -472,3 +472,19 @@ fun main() {
 //$query="delete from compras WHERE id = '".$id."'";
 //ejecutarSQLCommand($query)
 //?>
+
+
+//editarCompra.php
+//<?php
+//include('functions.php');
+//
+//$id=$_POST['id'];
+//$detalleUD=$_POST['detalle'];
+//$facturaUD=$_POST['factura'];
+//$montoUD=$_POST['monto'];
+//
+//$query="UPDATE compras set detalle='".$detalleUD."',
+//factura='".$facturaUD."', monto='".$montoUD."' WHERE id= '".$id."'";
+//
+//ejecutarSQLCommand($query)
+//?>
