@@ -21,8 +21,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="id"
-            app:layout_constraintBottom_toBottomOf="@+id/daysTextView"
-            app:layout_constraintEnd_toStartOf="@+id/daysTextView"
+            app:layout_constraintBottom_toBottomOf="@+id/daysSiembraTV"
+            app:layout_constraintEnd_toStartOf="@+id/daysSiembraTV"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toTopOf="parent" />
 
