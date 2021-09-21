@@ -488,3 +488,34 @@ fun main() {
 //
 //ejecutarSQLCommand($query)
 //?>
+
+//listaSiembras.php
+//<?php
+//include('functions.php');
+////$tipo = $_GET['txtTi'];
+//$array = array();
+//if($resultset=getSQLResultSet("SELECT * FROM produccion")){
+//
+//    while ($row = $resultset->fetch_array(MYSQLI_NUM)){
+//
+//        $e = array();
+//        $e['id'] = $row[0];
+//        $e['code'] = $row[1];
+//        $e['name'] = $row[2];
+//        $e['seed'] = $row[3];
+//        $e['days'] = $row[4];
+//        $e['bja'] = $row[5];
+//        $e['colorBja'] = $row[6];
+//        $e['siembraDate'] = $row[7];
+//        $e['gDays'] = $row[8];
+//        $e['almacigoDate'] = $row[9];
+//        $e['aDays'] = $row[10];
+//        $e['tuboDate'] = $row[11];
+//        $e['tDays'] = $row[12];
+//        $e['cosechaDate'] = $row[13];
+//
+//        array_push($array,$e);
+//    }
+//    echo json_encode($array);
+//}
+//?>
