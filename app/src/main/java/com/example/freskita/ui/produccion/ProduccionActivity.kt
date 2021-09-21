@@ -83,14 +83,14 @@ class ProduccionActivity : AppCompatActivity() {
     //------------------------------------------------------------------->
     //<!-----AppBar Menu, Botones:siembra ------------------------------->
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_compras,menu)
+        menuInflater.inflate(R.menu.menu_siembras,menu)
         return super.onCreateOptionsMenu(menu)
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.ingresar -> {
-//                val intent34 = Intent(this, NuevaSiembraActivity::class.java)
-//                this.startActivity(intent34)
+                val go2NuevaSiembra = Intent(this, NuevaSiembraActivity::class.java)
+                this.startActivity(go2NuevaSiembra)
             }
         }
         return super.onOptionsItemSelected(item)
