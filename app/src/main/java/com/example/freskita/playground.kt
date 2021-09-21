@@ -519,3 +519,22 @@ fun main() {
 //    echo json_encode($array);
 //}
 //?>
+
+//insertSiembra.php
+//<?php
+//include('functions.php');
+//
+//$today = date('Y-m-d');
+//$codeNew=$_POST['code'];
+//$nameNew=$_POST['name'];
+//$seedNew=$_POST['seed'];
+//$bjaNew=$_POST['bja'];
+//$colorBjaNew=$_POST['colorBja'];
+//$siembraDateNew=$_POST['siembraDate'];
+//
+//
+//$query="INSERT INTO produccion(code,name,seed,bja,colorBja,siembraDate)
+//VALUES('".$codeNew."','".$nameNew."','".$seedNew."','".$bjaNew."','".$colorBjaNew."','".$today."')";
+//ejecutarSQLCommand($query)
+//
+//?>
