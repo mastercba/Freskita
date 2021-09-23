@@ -538,3 +538,13 @@ fun main() {
 //ejecutarSQLCommand($query)
 //
 //?>
+
+//eliminarSiembra.php
+//<?php
+//include('functions.php');
+//
+//$id=$_POST['id'];
+//
+//$query="delete from produccion WHERE id = '".$id."'";
+//ejecutarSQLCommand($query)
+//?>
