@@ -39,7 +39,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Detalle :"
-        app:layout_constraintBottom_toBottomOf="@+id/detalleRxET"
+        app:layout_constraintBottom_toBottomOf="@+id/bjaRxTV"
         app:layout_constraintEnd_toStartOf="@+id/guideline5c" />
 
     <TextView
@@ -49,7 +49,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Factura :"
-        app:layout_constraintBottom_toBottomOf="@+id/facturaRxET"
+        app:layout_constraintBottom_toBottomOf="@+id/almacigoDateRxTV"
         app:layout_constraintEnd_toStartOf="@+id/guideline5c" />
 
     <TextView
@@ -59,31 +59,31 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Monto Bs. :"
-        app:layout_constraintBottom_toBottomOf="@+id/montoRxET"
+        app:layout_constraintBottom_toBottomOf="@+id/tuboDateRxTV"
         app:layout_constraintEnd_toStartOf="@+id/guideline5c" />
 
     <TextView
-        android:id="@+id/detalleRxET"
+        android:id="@+id/bjaRxTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="Detalle"
         android:inputType="text"
-        app:layout_constraintStart_toStartOf="@+id/facturaRxET"
+        app:layout_constraintStart_toStartOf="@+id/almacigoDateRxTV"
         app:layout_constraintTop_toBottomOf="@+id/fechaRxTV" />
 
     <TextView
-        android:id="@+id/facturaRxET"
+        android:id="@+id/almacigoDateRxTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="# Factura"
         android:inputType="number"
-        app:layout_constraintStart_toStartOf="@+id/montoRxET"
-        app:layout_constraintTop_toBottomOf="@+id/detalleRxET" />
+        app:layout_constraintStart_toStartOf="@+id/tuboDateRxTV"
+        app:layout_constraintTop_toBottomOf="@+id/bjaRxTV" />
 
     <TextView
-        android:id="@+id/montoRxET"
+        android:id="@+id/tuboDateRxTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -93,7 +93,7 @@
         android:hint="Bs."
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="@+id/guideline5c"
-        app:layout_constraintTop_toBottomOf="@+id/facturaRxET" />
+        app:layout_constraintTop_toBottomOf="@+id/almacigoDateRxTV" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5c"
@@ -108,7 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/detalleRxET"
+        app:layout_constraintStart_toStartOf="@+id/bjaRxTV"
         app:layout_constraintTop_toBottomOf="@+id/detalleCompraTitulo" />
 
     <TextView
@@ -130,6 +130,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/montoRxET" />
+        app:layout_constraintTop_toBottomOf="@+id/tuboDateRxTV" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

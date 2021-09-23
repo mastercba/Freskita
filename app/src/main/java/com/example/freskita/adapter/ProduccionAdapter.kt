@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.freskita.R
 import com.example.freskita.model.ProduccionModel
+import com.example.freskita.ui.produccion.DetalleSiembraActivity
 import kotlin.collections.ArrayList
 
 
@@ -45,32 +46,41 @@ class ProduccionAdapter(val arrayList: ArrayList<ProduccionModel>, val context: 
             val gmodel = arrayList.get(position)
             //obtener el detalle de compra seleccionada de un item con intent
             var gId:String = gmodel.id
-            var gcode: String = gmodel.code
-            var gname: String = gmodel.name
-            var gseed: String = gmodel.seed
-            var gbja: String = gmodel.bja
-            var gcolorBja: String = gmodel.colorBja
-            var gdays: String = gmodel.days
-            var gsiembraDate: String = gmodel.siembraDate
-            var galmacigoDate: String = gmodel.almacigoDate
-            var gtuboDate: String = gmodel.tuboDate
-            var gcosechaDate: String = gmodel.cosechaDate
-            var ggDays: String = gmodel.gDays
-            var gaDays: String = gmodel.aDays
-            var gtDays: String = gmodel.tDays
+            var gCode: String = gmodel.code
+            var gName: String = gmodel.name
+            var gSeed: String = gmodel.seed
+            var gBja: String = gmodel.bja
+            var gColorBja: String = gmodel.colorBja
+            var gDays: String = gmodel.days
+            var gSiembraDate: String = gmodel.siembraDate
+            var gAlmacigoDate: String = gmodel.almacigoDate
+            var gTuboDate: String = gmodel.tuboDate
+            var gCosechaDate: String = gmodel.cosechaDate
+            var gGDays: String = gmodel.gDays
+            var gADays: String = gmodel.aDays
+            var gTDays: String = gmodel.tDays
 
             //crear intent con kotlin
 
-//            val intentComprasDetalle = Intent(context, DetalleCompraActivity::class.java)
+            val intentSiembraDetalle = Intent(context, DetalleSiembraActivity::class.java)
             //poner todos los items con putExtra intent
-//            intentComprasDetalle.putExtra("iId",gId)
-//            intentComprasDetalle.putExtra("iDate",gDate)
-//            intentComprasDetalle.putExtra("iDetalle",gDetalle)
-//            intentComprasDetalle.putExtra("iFactura",gFactura)
-//            intentComprasDetalle.putExtra("iMonto",gMonto)
+            intentSiembraDetalle.putExtra("iId",gId)
+            intentSiembraDetalle.putExtra("iCode",gCode)
+            intentSiembraDetalle.putExtra("iName",gName)
+            intentSiembraDetalle.putExtra("iSeed",gSeed)
+            intentSiembraDetalle.putExtra("iBja",gBja)
+            intentSiembraDetalle.putExtra("iColorBja",gColorBja)
+            intentSiembraDetalle.putExtra("iDays",gDays)
+            intentSiembraDetalle.putExtra("iSiembraDate",gSiembraDate)
+            intentSiembraDetalle.putExtra("iAlmacigoDate",gAlmacigoDate)
+            intentSiembraDetalle.putExtra("iTuboDate",gTuboDate)
+            intentSiembraDetalle.putExtra("iCosechaDate",gCosechaDate)
+            intentSiembraDetalle.putExtra("iGDays",gGDays)
+            intentSiembraDetalle.putExtra("iADays",gADays)
+            intentSiembraDetalle.putExtra("iTDays",gTDays)
 
-            //iniciar el activity Comprasdetalle
-//            context.startActivity(intentComprasDetalle)
+            //
+            context.startActivity(intentSiembraDetalle)
 
         }
     }

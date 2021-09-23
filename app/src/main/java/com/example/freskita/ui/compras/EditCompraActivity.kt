@@ -1,12 +1,9 @@
 package com.example.freskita.ui.compras
 
-import android.content.Context
 import android.content.Intent
-import android.net.ConnectivityManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.android.volley.AuthFailureError
@@ -39,9 +36,9 @@ class EditCompraActivity : AppCompatActivity() {
 
         txtUpdateIDCompra = findViewById(R.id.idRxTV)
         txtUpdateDateCompra = findViewById(R.id.fechaRxTV)
-        txtUpdateDetalleCompra = findViewById(R.id.detalleRxET)
-        txtUpdateFacturaCompra = findViewById(R.id.facturaRxET)
-        txtUpdateMontoCompra = findViewById(R.id.montoRxET)
+        txtUpdateDetalleCompra = findViewById(R.id.bjaRxTV)
+        txtUpdateFacturaCompra = findViewById(R.id.almacigoDateRxTV)
+        txtUpdateMontoCompra = findViewById(R.id.tuboDateRxTV)
         btnUpdateCompra = findViewById(R.id.btnGuardarCompra)
 
         uId = intent.getStringExtra("iId").toString()

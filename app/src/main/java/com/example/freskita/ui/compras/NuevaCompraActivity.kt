@@ -29,9 +29,9 @@ class NuevaCompraActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nueva_compra)
 
-        txtDetalleCompra = findViewById(R.id.detalleRxET)
-        txtFacturaCompra = findViewById(R.id.facturaRxET)
-        txtMontoCompra = findViewById(R.id.montoRxET)
+        txtDetalleCompra = findViewById(R.id.bjaRxTV)
+        txtFacturaCompra = findViewById(R.id.almacigoDateRxTV)
+        txtMontoCompra = findViewById(R.id.tuboDateRxTV)
         btnGuardarCompra = findViewById(R.id.btnGuardarCompra)
 
         //verificamos la conexion a INTERNET

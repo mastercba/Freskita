@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Freskita">
         <activity
+            android:name=".ui.produccion.DetalleSiembraActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.produccion.ProduccionActivity" />
+        <activity
             android:name=".ui.produccion.NuevaSiembraActivity"
             android:exported="true"
             android:parentActivityName=".ui.produccion.ProduccionActivity" />

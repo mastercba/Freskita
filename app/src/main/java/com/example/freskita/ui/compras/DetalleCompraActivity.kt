@@ -3,12 +3,9 @@ package com.example.freskita.ui.compras
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.InputType
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import android.widget.TextView
 import android.widget.Toast
@@ -47,9 +44,9 @@ class DetalleCompraActivity : AppCompatActivity() {
 
         txtIDCompra = findViewById(R.id.idRxTV)
         txtEDdateCompra = findViewById(R.id.fechaRxTV)
-        txtEDdetalleCompra = findViewById(R.id.detalleRxET)
-        txtEDfacturaCompra = findViewById(R.id.facturaRxET)
-        txtEDmontoCompra = findViewById(R.id.montoRxET)
+        txtEDdetalleCompra = findViewById(R.id.bjaRxTV)
+        txtEDfacturaCompra = findViewById(R.id.almacigoDateRxTV)
+        txtEDmontoCompra = findViewById(R.id.tuboDateRxTV)
 
 
         eId = intent.getStringExtra("iId").toString()
