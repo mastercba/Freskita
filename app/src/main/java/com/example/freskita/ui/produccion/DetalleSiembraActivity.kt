@@ -151,13 +151,17 @@ class DetalleSiembraActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.edit -> {
-//                val udintent = Intent(this, EditCompraActivity::class.java)
-//                udintent.putExtra("iId",eId)
-//                udintent.putExtra("iDate",eDate)
-//                udintent.putExtra("iDetalle",eDetalle)
-//                udintent.putExtra("iFactura",eFactura)
-//                udintent.putExtra("iMonto",eMonto)
-//                this.startActivity(udintent)
+                val udintent = Intent(this, EditSiembraActivity::class.java)
+                udintent.putExtra("iId",eId)
+                udintent.putExtra("iName",eName)
+                udintent.putExtra("iSeed",eSeed)
+                udintent.putExtra("iBja",eBja)
+                udintent.putExtra("iColorBja",eColorBja)
+                udintent.putExtra("iSiembraDate",eSiembraDate)
+                udintent.putExtra("iAlmacigoDate",eAlmacigoDate)
+                udintent.putExtra("iTuboDate",eTuboDate)
+                udintent.putExtra("iCosechaDate",eCosechaDate)
+                this.startActivity(udintent)
             }
             R.id.delete -> {
                 delSiembra()
