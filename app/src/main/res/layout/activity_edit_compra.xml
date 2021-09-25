@@ -69,7 +69,7 @@
         android:layout_marginTop="16dp"
 
         android:hint="Detalle"
-        android:inputType="textPersonName"
+        android:inputType="textCapSentences"
         app:layout_constraintStart_toStartOf="@+id/almacigoDateRxTV"
         app:layout_constraintTop_toBottomOf="@+id/fechaRxTV" />
 

@@ -150,7 +150,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:inputType="text"
+        android:inputType="date"
         app:layout_constraintStart_toStartOf="@+id/guidelineS"
         app:layout_constraintTop_toBottomOf="@+id/siembraDateRxET" />
 
@@ -160,7 +160,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:inputType="text"
+        android:inputType="date"
         app:layout_constraintStart_toStartOf="@+id/guidelineS"
         app:layout_constraintTop_toBottomOf="@+id/almacigoDateRxET" />
 
@@ -170,7 +170,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:inputType="text"
+        android:inputType="date"
         app:layout_constraintStart_toStartOf="@+id/guidelineS"
         app:layout_constraintTop_toBottomOf="@+id/tuboDateRxET" />
 
