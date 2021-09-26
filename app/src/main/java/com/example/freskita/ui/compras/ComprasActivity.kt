@@ -87,7 +87,7 @@ class ComprasActivity : AppCompatActivity() {
 
 
 
-    //<!-----AppBar Menu, Botones:produccion,compras,ventas & salir------>
+    //<!-----AppBar Menu, Botones:compra -------------------------------->
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_compras,menu)
         return super.onCreateOptionsMenu(menu)

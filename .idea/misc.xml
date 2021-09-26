@@ -5,12 +5,18 @@
       <map>
         <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/activity_compras.xml" value="0.17239583333333333" />
         <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/activity_detalle_compra.xml" value="0.33" />
+        <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/activity_detalle_siembra.xml" value="0.5" />
         <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/activity_edit_compra.xml" value="0.2169230769230769" />
+        <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/activity_edit_siembra.xml" value="0.5" />
         <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/activity_nueva_compra.xml" value="0.2518518518518518" />
-        <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/compra_item.xml" value="1.0" />
+        <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/activity_nueva_siembra.xml" value="0.215" />
+        <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/activity_produccion.xml" value="0.1" />
+        <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/compra_item.xml" value="0.2986111111111111" />
+        <entry key="..\:/WorkSpace/Freskita/app/src/main/res/layout/produccion_item.xml" value="0.5" />
         <entry key="..\:/WorkSpace/Freskita/app/src/main/res/menu/menu_compras.xml" value="0.2518518518518518" />
         <entry key="..\:/WorkSpace/Freskita/app/src/main/res/menu/menu_edit_delete.xml" value="0.1" />
         <entry key="..\:/WorkSpace/Freskita/app/src/main/res/menu/menu_home.xml" value="0.33" />
+        <entry key="..\:/WorkSpace/Freskita/app/src/main/res/menu/menu_siembras.xml" value="0.1" />
       </map>
     </option>
   </component>

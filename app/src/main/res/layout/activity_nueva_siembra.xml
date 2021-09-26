@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.compras.NuevaCompraActivity">
+    tools:context=".ui.produccion.NuevaSiembraActivity">
 
     <TextView
-        android:id="@+id/detalleCompraTitulo"
+        android:id="@+id/detalleSiembraTitulo"
         android:layout_width="332dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
-        android:text="NUEVA COMPRA"
+        android:text="NUEVA SIEMBRA"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="22dp"
@@ -23,8 +23,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/bjaRxTV"
-        android:layout_width="0dp"
+        android:id="@+id/nameSiembraET"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
@@ -32,15 +32,15 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:ems="10"
-        android:hint="Detalle"
-        android:inputType="textCapSentences"
+        android:hint="Nombre"
+        android:inputType="textCapWords"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline1c" />
 
     <EditText
-        android:id="@+id/almacigoDateRxTV"
-        android:layout_width="0dp"
+        android:id="@+id/seedSiembraET"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
@@ -48,23 +48,35 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:ems="10"
-        android:hint="# Factura"
+        android:hint="# Semilla"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bjaRxTV" />
+        app:layout_constraintTop_toBottomOf="@+id/nameSiembraET" />
 
     <EditText
-        android:id="@+id/tuboDateRxTV"
+        android:id="@+id/bjaSiembraET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="Bs."
-        android:inputType="numberDecimal"
+        android:hint="# Bandeja"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/almacigoDateRxTV" />
+        app:layout_constraintTop_toBottomOf="@+id/seedSiembraET" />
+
+    <EditText
+        android:id="@+id/colorBjaSiembraET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Color Bandeja"
+        android:inputType="textCapWords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bjaSiembraET" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2c"
@@ -81,15 +93,14 @@
         app:layout_constraintGuide_percent="0.15" />
 
     <Button
-        android:id="@+id/btnGuardarCompra"
+        android:id="@+id/btnGuardarSiembra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="GUARDAR COMPRA"
+        android:text="GUARDAR SIEMBRA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tuboDateRxTV" />
-
+        app:layout_constraintTop_toBottomOf="@+id/colorBjaSiembraET" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

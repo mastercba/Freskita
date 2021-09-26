@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.produccion.EditSiembraActivity">
+
+    <TextView
+        android:id="@+id/updateSiembraTitulo"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="EDITAR SIEMBRA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Name :"
+        app:layout_constraintBottom_toBottomOf="@+id/nameRxET"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineS"
+        app:layout_constraintTop_toBottomOf="@+id/updateSiembraTitulo" />
+
+
+    <TextView
+        android:id="@+id/bjaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Bandeja :"
+        app:layout_constraintBottom_toBottomOf="@+id/bjaRxET"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineS" />
+
+    <TextView
+        android:id="@+id/siembraDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Siembra :"
+        app:layout_constraintBottom_toBottomOf="@+id/siembraDateRxET"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineS" />
+
+    <TextView
+        android:id="@+id/almacigoDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Almacigo :"
+        app:layout_constraintBottom_toBottomOf="@+id/almacigoDateRxET"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineS" />
+
+    <TextView
+        android:id="@+id/tuboDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Tubo :"
+        app:layout_constraintBottom_toBottomOf="@+id/tuboDateRxET"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineS" />
+
+    <TextView
+        android:id="@+id/cosechaDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Cosecha :"
+        app:layout_constraintBottom_toBottomOf="@+id/cosechaDateRxET"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineS" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <EditText
+        android:id="@+id/nameRxET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:inputType="textCapWords"
+        app:layout_constraintBottom_toBottomOf="@+id/seedRxET"
+        app:layout_constraintStart_toStartOf="@+id/guidelineS"
+        app:layout_constraintTop_toBottomOf="@+id/updateSiembraTitulo" />
+
+    <EditText
+        android:id="@+id/seedRxET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/nameRxET"
+        app:layout_constraintTop_toBottomOf="@+id/updateSiembraTitulo" />
+
+    <EditText
+        android:id="@+id/bjaRxET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/colorBjaRxET"
+        app:layout_constraintStart_toStartOf="@+id/guidelineS" />
+
+    <EditText
+        android:id="@+id/colorBjaRxET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:inputType="textCapWords"
+        app:layout_constraintStart_toEndOf="@+id/bjaRxET"
+        app:layout_constraintTop_toBottomOf="@+id/seedRxET" />
+
+    <EditText
+        android:id="@+id/siembraDateRxET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/guidelineS"
+        app:layout_constraintTop_toBottomOf="@+id/bjaRxET" />
+
+    <EditText
+        android:id="@+id/almacigoDateRxET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/guidelineS"
+        app:layout_constraintTop_toBottomOf="@+id/siembraDateRxET" />
+
+    <EditText
+        android:id="@+id/tuboDateRxET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/guidelineS"
+        app:layout_constraintTop_toBottomOf="@+id/almacigoDateRxET" />
+
+    <EditText
+        android:id="@+id/cosechaDateRxET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/guidelineS"
+        app:layout_constraintTop_toBottomOf="@+id/tuboDateRxET" />
+
+    <Button
+        android:id="@+id/btnGuardarSiembra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="GUARDAR SIEMBRA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cosechaDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

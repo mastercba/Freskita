@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_margin="12dp"
+    card_view:cardBackgroundColor="#FFFFFF"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/idSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="id"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/codeSiembraTV"
+            app:layout_constraintStart_toEndOf="@+id/codeSiembraTV"
+            app:layout_constraintTop_toTopOf="@+id/codeSiembraTV" />
+
+        <TextView
+            android:id="@+id/codeSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Name"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/codeSiembraTV" />
+
+        <TextView
+            android:id="@+id/seedSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Seed"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/nameSiembraTV"
+            app:layout_constraintStart_toEndOf="@+id/nameSiembraTV" />
+
+        <TextView
+            android:id="@+id/textViewS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Siembra :"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <TextView
+            android:id="@+id/textViewS2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Almacigo :"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewS1" />
+
+        <TextView
+            android:id="@+id/textViewS3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Madurez :"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewS2" />
+
+        <TextView
+            android:id="@+id/textViewS4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Cosecha :"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewS3" />
+
+        <TextView
+            android:id="@+id/daysSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            card_view:text="18" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.36" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.63" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <TextView
+            android:id="@+id/siembradateSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            card_view:text="00.00.0000" />
+
+        <TextView
+            android:id="@+id/almacigodateSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/siembradateSiembraTV"
+            card_view:text="00.00.0000" />
+
+        <TextView
+            android:id="@+id/tubodateSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/almacigodateSiembraTV"
+            card_view:text="00.00.0000" />
+
+        <TextView
+            android:id="@+id/cosechadateSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/tubodateSiembraTV"
+            card_view:text="00.00.0000" />
+
+        <TextView
+            android:id="@+id/gdaysSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            card_view:text="5" />
+
+        <TextView
+            android:id="@+id/adaysSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/gdaysSiembraTV"
+            card_view:text="14" />
+
+        <TextView
+            android:id="@+id/tdaysSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/adaysSiembraTV"
+            card_view:text="21" />
+
+        <TextView
+            android:id="@+id/bjaSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="77"
+            app:layout_constraintBottom_toBottomOf="@+id/seedSiembraTV"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+
+        <TextView
+            android:id="@+id/colorBjaSiembraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="rojo"
+            app:layout_constraintBottom_toBottomOf="@+id/bjaSiembraTV"
+            app:layout_constraintStart_toEndOf="@+id/bjaSiembraTV" />
+
+        <TextView
+            android:id="@+id/textViewS5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="#bja"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

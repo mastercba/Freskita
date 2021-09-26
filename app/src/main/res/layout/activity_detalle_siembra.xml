@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.produccion.DetalleSiembraActivity">
+
+    <TextView
+        android:id="@+id/detalleSiembraTitulo"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="DETALLE SIEMBRA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Name :"
+        app:layout_constraintBottom_toBottomOf="@+id/nameRxTV"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/detalleSiembraTitulo" />
+
+    <TextView
+        android:id="@+id/seedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Semilla :"
+        app:layout_constraintBottom_toBottomOf="@+id/semillaRxTV"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/nameLabel" />
+
+    <TextView
+        android:id="@+id/bjaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Bandeja :"
+        app:layout_constraintBottom_toBottomOf="@+id/bjaRxTV"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/seedLabel" />
+
+    <TextView
+        android:id="@+id/colorBja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Color Bja :"
+        app:layout_constraintBottom_toBottomOf="@+id/colorBjaRxTV"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/bjaLabel" />
+
+    <TextView
+        android:id="@+id/siembraDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Siembra :"
+        app:layout_constraintBottom_toBottomOf="@+id/siembraDateRxTV"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/colorBja" />
+
+    <TextView
+        android:id="@+id/almacigoDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Almacigo :"
+        app:layout_constraintBottom_toBottomOf="@+id/almacigoDateRxTV"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/siembraDate" />
+
+    <TextView
+        android:id="@+id/tuboDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tubo :"
+        app:layout_constraintBottom_toBottomOf="@+id/tuboDateRxTV"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/almacigoDate" />
+
+    <TextView
+        android:id="@+id/cosechaDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cosecha :"
+        app:layout_constraintBottom_toBottomOf="@+id/cosechaDateRxTV"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/tuboDate" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <TextView
+        android:id="@+id/nameRxTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Nombre"
+        app:layout_constraintStart_toEndOf="@+id/nameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/detalleSiembraTitulo" />
+
+    <TextView
+        android:id="@+id/semillaRxTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="#Semilla"
+        app:layout_constraintStart_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/nameRxTV" />
+
+    <TextView
+        android:id="@+id/bjaRxTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Bandeja"
+        app:layout_constraintStart_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/semillaRxTV" />
+
+    <TextView
+        android:id="@+id/colorBjaRxTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Color"
+        app:layout_constraintStart_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/bjaRxTV" />
+
+    <TextView
+        android:id="@+id/siembraDateRxTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="2021-09-22"
+        app:layout_constraintStart_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/colorBjaRxTV" />
+
+    <TextView
+        android:id="@+id/almacigoDateRxTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="2021-09-22"
+        app:layout_constraintStart_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/siembraDateRxTV" />
+
+    <TextView
+        android:id="@+id/tuboDateRxTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="2021-09-22"
+        app:layout_constraintStart_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/almacigoDateRxTV" />
+
+    <TextView
+        android:id="@+id/cosechaDateRxTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="2021-09-22"
+        app:layout_constraintStart_toStartOf="@+id/guideline5c"
+        app:layout_constraintTop_toBottomOf="@+id/tuboDateRxTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

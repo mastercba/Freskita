@@ -13,6 +13,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Freskita">
         <activity
+            android:name=".ui.produccion.EditSiembraActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.produccion.ProduccionActivity" />
+        <activity
+            android:name=".ui.produccion.DetalleSiembraActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.produccion.ProduccionActivity" />
+        <activity
+            android:name=".ui.produccion.NuevaSiembraActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.produccion.ProduccionActivity" />
+        <activity
+            android:name=".ui.produccion.ProduccionActivity"
+            android:exported="true"
+            android:label="@string/title_activity_siembras"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".ui.compras.EditCompraActivity"
             android:exported="true"
             android:parentActivityName=".ui.compras.ComprasActivity" />
